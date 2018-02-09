@@ -8,8 +8,10 @@ namespace EventData
     {
         public static List<ImageEvent> ToImageEvent(this Uri uri)
         {
-            var result = new List<ImageEvent>();
-            result.Add(new ImageEvent(uri));
+            var result = new List<ImageEvent>
+            {
+                new ImageEvent(uri)
+            };
             return result;
         }
     }

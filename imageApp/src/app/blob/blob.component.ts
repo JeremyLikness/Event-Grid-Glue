@@ -18,7 +18,7 @@ export class BlobComponent implements OnInit {
   ngOnInit() {
     let image = this.img.nativeElement as HTMLImageElement;
     if (this.blobImage) {
-      image.src = this.blobImage.Url;
+      image.src = `${this.baseUrl}ShowImage?href=${this.blobImage.Url}`;
       image.alt = this.caption = this.blobImage.Caption;
     }
   }
