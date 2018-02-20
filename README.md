@@ -15,3 +15,6 @@ The logic app looks like this:
 
 ![Logic app](./logicapp.png)
 
+You also need to update the console app to point to your Event topic end point, and
+set environment variable `EVENT_GRID_KEY` to the key for the topic.
+
